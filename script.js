@@ -1,5 +1,5 @@
 // Dán URL Web App của Apps Script (xem README.md) vào đây sau khi deploy.
-const SCRIPT_URL = "PASTE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzKBxcHDfIjuc4g2n8FIg-6yNCk7Q46P7mtoz65suRWH6GOTN3r3vRQxc9Sfk-tSK1gDA/exec";
 
 const form = document.getElementById("registerForm");
 const participateRadios = document.querySelectorAll('input[name="thamGia"]');
