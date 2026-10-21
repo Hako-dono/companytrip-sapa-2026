@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Đăng ký Company Trip 2026 - BSM Labs</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">BSM Labs</p>
+      <h1>Company Trip 2026<br /><span>Beyond The Clouds</span></h1>
+      <p class="subtitle">Đăng ký tham gia chuyến đi Sapa cùng cả nhà</p>
+    </header>
+
+    <section class="info-card">
+      <h2>Thông báo Company Trip</h2>
+      <p>
+        Kính gửi toàn thể CBNV,<br />
+        Nhằm tạo cơ hội để các thành viên thư giãn sau những ngày làm việc, tăng cường kết nối và
+        cùng nhau tạo nên những trải nghiệm đáng nhớ, BSM Labs tổ chức chương trình
+        <strong>Company Trip 2026 - Beyond The Clouds</strong> tại Sapa với thông tin cụ thể như sau:
+      </p>
+      <ul class="info-list">
+        <li>🗓️ <strong>Thời gian:</strong> Thứ 6, ngày 06/11 đến thứ 7, ngày 07/11/2026</li>
+        <li>🚌 <strong>Phương tiện di chuyển:</strong> Xe giường nằm</li>
+        <li>📍 <strong>Địa điểm xuất phát:</strong> Văn phòng Công ty - 219 Trung Kính</li>
+      </ul>
+      <h3>Lịch trình di chuyển</h3>
+      <ul class="info-list">
+        <li><strong>22h30 ngày 05/11/2026:</strong> Tập trung tại văn phòng Công ty. Lên xe di chuyển hướng Sapa</li>
+        <li><strong>Ngày 06/11/2026:</strong> Tham gia các hoạt động trong chương trình Company Trip tại Sapa</li>
+        <li><strong>15h00 ngày 07/11/2026:</strong> Khởi hành trở về</li>
+      </ul>
+      <p>Chi tiết chương trình sẽ được P. HCNS thông báo cụ thể vào ngày 27/10/2026.</p>
+      <p class="deadline">⏰ Hạn đăng ký: trước <strong>9h00 ngày 26/10/2026</strong></p>
+    </section>
+
+    <section class="form-card" id="formSection">
+      <h2>Đăng ký / Phản hồi</h2>
+      <form id="registerForm" novalidate>
+        <label class="field">
+          <span>Họ và tên <span class="req">*</span></span>
+          <input type="text" id="hoTen" name="hoTen" required autocomplete="name" />
+        </label>
+
+        <label class="field">
+          <span>Phòng ban <span class="req">*</span></span>
+          <input type="text" id="phongBan" name="phongBan" required />
+        </label>
+
+        <fieldset class="field radio-field">
+          <span>Bạn có tham gia Company Trip không? <span class="req">*</span></span>
+          <label class="radio-option">
+            <input type="radio" name="thamGia" value="true" required />
+            Tham gia
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="thamGia" value="false" required />
+            Không tham gia
+          </label>
+        </fieldset>
+
+        <label class="field" id="reasonGroup" hidden>
+          <span>Lý do không tham gia <span class="req">*</span></span>
+          <textarea id="lyDo" name="lyDo" rows="3" placeholder="Anh/chị vui lòng cho biết lý do..."></textarea>
+        </label>
+
+        <button type="submit">Xác nhận đăng ký</button>
+      </form>
+    </section>
+
+    <section class="result-card" id="resultSection" hidden></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
