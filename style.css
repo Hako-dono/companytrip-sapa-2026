@@ -99,6 +99,10 @@ body {
   margin-bottom: 18px;
 }
 
+.field[hidden] {
+  display: none;
+}
+
 .field > span:first-child {
   display: block;
   font-weight: 600;
