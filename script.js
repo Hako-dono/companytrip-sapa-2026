@@ -7,6 +7,14 @@ const reasonGroup = document.getElementById("reasonGroup");
 const reasonInput = document.getElementById("lyDo");
 const formSection = document.getElementById("formSection");
 const resultSection = document.getElementById("resultSection");
+const closedNotice = document.getElementById("closedNotice");
+
+const REGISTRATION_DEADLINE = new Date(2026, 9, 26, 11, 30, 0);
+
+if (new Date() > REGISTRATION_DEADLINE) {
+  form.hidden = true;
+  closedNotice.hidden = false;
+}
 
 participateRadios.forEach((radio) => {
   radio.addEventListener("change", () => {
